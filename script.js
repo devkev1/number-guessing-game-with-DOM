@@ -1,8 +1,10 @@
 let btn = document.getElementById("btn");
 let output = document.getElementById("output"); 
 let input = document.getElementById("userInput");
+let guesses = document.getElementById("guesses");
 
 let number = 8;
+let score = 0;
 
 function guess() {
     let guess = input.value;
@@ -15,6 +17,7 @@ function guess() {
         output.innerHTML = "You guessed too low!";
     } else {
         output.innerHTML = "Congrats! You guessed the correct number!"}
+        guesses.textContent = ++score + (score == 1 ? " guess" : " guesses");
     }
 
 btn.addEventListener("click", guess);
