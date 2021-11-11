@@ -1,7 +1,7 @@
 let btn = document.getElementById("btn");
 let output = document.getElementById("output"); 
 let input = document.getElementById("userInput");
-let guesses = document.getElementById("guesses");
+let guesses = document.getElementById("guesses"); 
 
 let number = 8;
 let score = 0;
